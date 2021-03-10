@@ -16,5 +16,5 @@ class Empleado():
 
     @staticmethod
     def desde_cadena(cadena):
-        parametros = cadena.split("-")
-        Empleado(parametro[0], parametro[1], parametro[2])
+        parametro = cadena.split("-")
+        return Empleado(parametro[0], parametro[1], parametro[2])
