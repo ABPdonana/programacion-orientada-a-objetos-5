@@ -14,6 +14,13 @@ class Empleado():
     def salario(self):
         return self.__salario
 
+    def nombre_completo(self):
+        return self.nombre() + " " + self.apellidos()
+
+    def email(self):
+        __aux = self.nombre() + "." + self.apellidos() + "@company.com"
+        return __aux.lower()
+
     @staticmethod
     def desde_cadena(cadena):
         parametro = cadena.split("-")
